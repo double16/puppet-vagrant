@@ -26,7 +26,7 @@ class Puppet::Provider::Vagrant <  Puppet::Provider
   end
 
   def vagrant(*args)
-    cmd = ["/opt/vagrant/bin/vagrant"] + args
+    cmd = ["/usr/local/bin/vagrant"] + args
     execute cmd, opts
   end
 end
